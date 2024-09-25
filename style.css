@@ -10,7 +10,7 @@
 
 body{
     width: 100vw;
-    height: 1000px;
+    height: 1800px;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -39,10 +39,9 @@ p, h2{
     left: 0;
     width: 100%;
     height: 500px;
-    background-color: rgba(148, 58, 233, 0.363);
+    background-color: rgba(99, 39, 155, 0.363);
     z-index: 1;
 }
-
 
 .titulo{
     position: relative;
@@ -56,12 +55,15 @@ p, h2{
     padding-bottom: 100px;
 }
 
+a{
+    text-decoration: none !important;
+}
+
 .contlink{
     display: flex;
-    text-decoration: none;
+    flex-direction: column;
     color: white;
-    height: 70px;
-    font-family: roboto;
+    height: 20px;
     align-items: center;
 
 }
@@ -69,12 +71,17 @@ p, h2{
 .linkcont{
     display: flex;
     text-align: center;
+    flex-direction: column;
+    color: white;
+}
+
+.linkcont:hover{
+    background-color: black;
 }
 
 .cont{
     width: 100vw;
     height: 500px;
-    border: 1px green solid;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -95,4 +102,21 @@ i{
     align-items: center;
     text-align: center;
     gap: 50px;
+}
+
+.mywork{
+    width: 100vw;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 239, 239);
+}
+
+#wtitle{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    border: 1px green solid;
 }
