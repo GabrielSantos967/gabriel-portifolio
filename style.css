@@ -10,7 +10,7 @@
 
 body{
     width: 100vw;
-    height: 2200px;
+    height: 2500px;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -23,6 +23,27 @@ p, h2{
 
 a{
     text-decoration: none !important;
+}
+
+.lang{
+    width: 95vw;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    color: white;
+}
+
+#lang{
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    width: 85px;
+    height: 30px;
+    text-align: center;
+}
+
+#lang:hover{
+    border: 2px solid white;
 }
 
 .cabecalho{
@@ -157,43 +178,38 @@ a{
 
 .me{
     width: 100vw;
-    height: 400px;
+    height: 700px;
+    background-color: rgba(99, 39, 155, 0.925);
     display: flex;
     flex-direction: column;
     padding: 20px;
     align-items: center;
 }
 
-#metitle{
-    width: 400px;
-    text-align: center;
+.contato{
+    color: white;
 }
 
-.social{
-    width: 90vw;
-    height: 200px;
+form{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
+    width: 500px;
 }
 
-#social{
-    width: 300px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding-left: 30px;
-    padding-top: 10px;
-    border-bottom: 2px solid rgba(99, 39, 155, 0.925);
-    border-radius: 30px;
-    gap: 20px;
+.message-area {
+    width: 100%; /* Largura total */
+    height: 150px; /* Altura da área de texto, ajuste conforme necessário */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    resize: vertical; /* Permitir redimensionamento vertical */
 }
 
-#email{
-    padding-bottom: 11px;
+label{
+    color: white;
+    font-family: roboto;
+    font-size: 30px;
 }
 
 #medesc{
@@ -245,6 +261,10 @@ a{
 
     .imagem{
         max-width: 390px;
+    }
+
+    form{
+        width: 200px;
     }
 }
 

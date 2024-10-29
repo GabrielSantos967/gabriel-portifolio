@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
-    <title>Gabriel</title>
-</head>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css">
+    </head>
 <body>
     <div class="cabecalho">
+        <span class="lang">
+            <a href="index-en.html" id="lang">English</a>
+            <a href="index.html" id="lang">Portuguese</a>
+        </span>
         <span class="titulo">
             <h1>Olá, Sou o Gabriel. Desenvolvo e crio sites e interfaces.</h1>
         </span>
@@ -49,21 +48,21 @@
         <span class="sum">
             <span class="texto">
                 <h2 id="mwtitle">Kapietrart</h2>
-                <p class="textdesc">Site responsivo criado para um estúdio de tatuagem, com foco na experiência do usuário e estética. O layout realça os trabalhos do tatuador por meio de uma galeria interativa, além de apresentar os estilos artísticos, refletindo a identidade única do estúdio e do profissional.</p>
+                <p class="textdesc">Site responsivo criado para um estúdio de tatuagem, com foco na experiência do usuário e estética. Foi criado com HTML e Css, usando de técnicas para realçar o trabalho do tatuador além de apresentar os estilos artísticos, refletindo a identidade única do estúdio e do profissional.</p>
                 <a target="_blank" rel="noopener noreferrer" href="https://kapietrart.vercel.app/" class="botao">Acesse aqui</a>
             </span>
             <span class="imagem">
-                <img id="imagem" src="./site-1.png" alt="">
+                <img id="imagem" src="./site-1.png" alt="" loading="lazy">
             </span>
         </span>
         <span class="sdois">
             <span class="texto">
-                <h2 id="mwtitle">Social links</h2>
-                <p class="textdesc">Plataforma desenvolvida para organizar e facilitar o acesso a links úteis. A página principal é segmentada por categorias claras, com descrições objetivas que permitem ao usuário localizar rapidamente o que busca. O design é responsivo e intuitivo, oferecendo uma navegação fluida em diferentes dispositivos.</p>
-                <a target="_blank" rel="noopener noreferrer" href="https://social-links-mu.vercel.app/" class="botao">Acesse aqui</a>
+                <h2 id="mwtitle">Current Weather</h2>
+                <p class="textdesc">Um site desenvolvido em React para fornecer previsões do tempo para o dia atual e os próximos cinco dias usando uma API. Este projeto utiliza tecnologias web modernas para oferecer dados meteorológicos precisos e em tempo real, garantindo uma experiência do usuário envolvente.</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://current-weather-react.vercel.app/" class="botao">Acesse aqui</a>
             </span>
             <span class="imagem">
-                <img id="imagem" src="./site-2.png" alt="">
+                <img id="imagem" src="./site-2.png" alt="" loading="lazy">
             </span>
         </span> 
         <span class="stres">
@@ -73,21 +72,25 @@
                 <a target="_blank" rel="noopener noreferrer" href="https://recipe-page-cyan-sigma.vercel.app/" class="botao">Acesse aqui</a>
             </span>
             <span class="imagem">
-                <img id="imagem" src="./site-3.png" alt="">
+                <img id="imagem" src="./site-3.png" alt="" loading="lazy">
             </span>
         </span>
     </div>
     <div class="me">
-        <h2 id="metitle">Gostou? <br>Entre em contato</h2>
-        <span class="social">
-            <span id="social">
-                <i class="fi fi-rr-envelope" id="email"></i>
-                <p id="medesc">biel2013as@gmail.com</p>
-            </span>
-            <span id="social">
-                <i class="fi fi-brands-whatsapp" id="email"></i>
-                <p id="medesc">(41) 99556-1761</p>
-            </span>
+        <h2 class="contatos">Contato</h2>
+        <span class="formulario">
+            <form action="send_email.php" method="POST">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" class="message-area" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
         </span>
     </div>
 </body>
